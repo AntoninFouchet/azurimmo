@@ -1,6 +1,7 @@
 package bts.sio.azurimmo.model;
 
 import jakarta.persistence.*;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 import java.util.List; 
 

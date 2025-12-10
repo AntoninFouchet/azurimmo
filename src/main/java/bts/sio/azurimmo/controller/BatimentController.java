@@ -1,5 +1,6 @@
 package bts.sio.azurimmo.controller;
 
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,12 @@ public class BatimentController {
     @Autowired 
     private BatimentService batimentService; 
     
+    @GetMapping("/")
+    public List<BatimentDTO> getAllBatiments() {
+        return batimentService.getBatimentsDTO(); 
+    }
+    
+
 /*    
     @GetMapping("/{batimentId}")
     public Optional <BatimentDTO> getBatimentDTO(@PathVariable long batimentId) {

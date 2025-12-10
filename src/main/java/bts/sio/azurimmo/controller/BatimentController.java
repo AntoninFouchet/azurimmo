@@ -21,6 +21,12 @@ public class BatimentController {
         return batimentService.getBatimentsDTO(); 
     }
     
+    @PostMapping("/")
+    public ResponseEntity<BatimentDTO> createBatiment(@RequestBody BatimentDTO dto) {
+        BatimentDTO savedDTO = batimentService.saveBatimentDTO(dto);
+        return ResponseEntity.status(201).body(savedDTO); 
+    }
+
 
 /*    
     @GetMapping("/{batimentId}")

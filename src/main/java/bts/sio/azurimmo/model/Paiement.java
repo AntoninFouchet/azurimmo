@@ -8,8 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
-
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -28,15 +27,16 @@ public class Paiement {
 	 @Column(name="date_paiement")
 	 private LocalDate datePaiement; 
 
+	 @Column(name="montant")
+	 private Float montant;
 	 
 	 @Column(name="type_paiement") 
 	 private String typePaiement; 
 	 
-	 @Column(name="satut") 
+	 @Column(name="statut") 
 	 private String statut; 
 	 
-	 
-	 @ManyToMany
+	 @ManyToOne 
 	 @JoinColumn(name = "contrat_id") 
-	 private Appartement contrat;
+	 private Contrat contrat; 
 }

@@ -10,5 +10,7 @@ public class LocataireDTO {
     private String nom;
     private String prenom;
     private String mail;
+    private String iban;
+    private String situation;
    
 }

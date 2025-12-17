@@ -12,11 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import bts.sio.azurimmo.model.Locataire;
-import bts.sio.azurimmo.model.Paiement;
 import bts.sio.azurimmo.model.dto.LocataireDTO;
-import bts.sio.azurimmo.model.dto.PaiementDTO;
 import bts.sio.azurimmo.service.LocataireService;
-import bts.sio.azurimmo.service.PaiementService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
@@ -31,7 +28,7 @@ public class LocataireController {
    
    @GetMapping("/")
    @Operation(summary = "Lister tous les locataires")
-   public List<LocataireDTO> getAllLocataies() {
+   public List<LocataireDTO> getAllLocataires() {
        return locataireService.getLocatairesDTO(); 
    }
 	
@@ -43,8 +40,8 @@ public class LocataireController {
     
  
     @GetMapping("/{locataireId}")
-    @Operation(summary = "Consulter un Paiement par ID")
-    public ResponseEntity<LocataireDTO> getPaiementDTOById(@PathVariable long locataireId) {
+    @Operation(summary = "Consulter un Locataire par ID")
+    public ResponseEntity<LocataireDTO> getLocataireDTOById(@PathVariable long locataireId) {
             return locataireService.getLocataireDTO(locataireId)
                                   .map(ResponseEntity::ok)  
                                   .orElse(ResponseEntity.notFound().build()); 
@@ -52,8 +49,8 @@ public class LocataireController {
     
  
     @GetMapping("/contrat/{contratId}") 
-    @Operation(summary = "Lister les locataire d'un contrat")
-    public List<LocataireDTO> getPaiementParContrat(@PathVariable long contratId) {
+    @Operation(summary = "Lister les locataires d'un contrat")
+    public List<LocataireDTO> getLocatairesParContrat(@PathVariable long contratId) { 
             return locataireService.getLocataireParContrat(contratId);
      }
 }

@@ -33,7 +33,7 @@ public class LocataireService {
 	 
 	    
 	 public List<LocataireDTO> getLocataireParContrat(long id) {
-	        return locataireRepository.findByContrat_Id(id)
+	        return locataireRepository.findByContrats_Id(id)
 	                                .stream()
 	                                .map(LocataireMapper::toDTO)
 	                                .collect(Collectors.toList());

@@ -7,13 +7,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import bts.sio.azurimmo.model.Contrat;
 import bts.sio.azurimmo.model.Paiement;
-import bts.sio.azurimmo.model.dto.ContratDTO;
 import bts.sio.azurimmo.model.dto.PaiementDTO;
-import bts.sio.azurimmo.model.mapper.ContratMapper;
 import bts.sio.azurimmo.model.mapper.PaiementMapper;
-import bts.sio.azurimmo.repository.ContratRepository;
 import bts.sio.azurimmo.repository.PaiementRepository;
 import lombok.Data;
 
@@ -43,7 +39,7 @@ public class PaiementService {
 	    }
 	
 	   
-	 public List<PaiementDTO> gePaiementsDTO() {
+	 public List<PaiementDTO> getPaiementsDTO() {
 			 return paiementRepository.findAll()
 									 .stream()
 									 .map(PaiementMapper::toDTO)

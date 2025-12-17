@@ -1,8 +1,7 @@
 package bts.sio.azurimmo.model.mapper;
 
-import bts.sio.azurimmo.model.Appartement;
+
 import bts.sio.azurimmo.model.Contrat;
-import bts.sio.azurimmo.model.dto.AppartementDTO;
 import bts.sio.azurimmo.model.dto.ContratDTO;
 
 public class ContratMapper {

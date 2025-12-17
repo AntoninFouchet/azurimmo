@@ -9,6 +9,7 @@ public class LocataireDTO {
     private Long id; 
     private String nom;
     private String prenom;
+    private String numeroTel;
     private String mail;
     private String iban;
     private String situation;

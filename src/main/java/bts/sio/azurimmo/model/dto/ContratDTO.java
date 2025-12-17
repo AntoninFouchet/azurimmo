@@ -1,6 +1,7 @@
 package bts.sio.azurimmo.model.dto;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,4 +14,8 @@ public class ContratDTO {
 	private LocalDate date_fin;
 	private Float montant_brut;
 	private Float montant_charges;
+	
+	
+    private List<LocataireDTO> locataires;
+    private AppartementDTO appartement; 
 }

@@ -1,15 +1,9 @@
 package bts.sio.azurimmo.model;
 
-import java.time.LocalDate; 
+import java.time.LocalDate;
+import java.util.List;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -25,19 +19,26 @@ public class Contrat {
 	 private String libelle; 
 
 	 @Column(name="date_debut")
-	 private LocalDate dateDebut; 
+	 private LocalDate dateDebut;
 	 
 	 @Column(name="date_fin") 
-	 private LocalDate dateFin; 
+	 private LocalDate dateFin;
 	 
 	 @Column(name="montant_brut") 
-	 private float montantBrut; 
+	 private float montantBrut;
 	 
 	 @Column(name="montant_charges") 
-	 private float montantCharges; 
+	 private float montantCharges;
 	 
 	 @ManyToOne 
 	 @JoinColumn(name = "appartement_id") 
 	 private Appartement appartement;
-	 
+
+     @ManyToMany
+     @JoinTable(
+        name = "contrat_locataire",
+        joinColumns = @JoinColumn(name = "contrat_id"),
+        inverseJoinColumns = @JoinColumn(name = "locataire_id")
+     )
+     private List<Locataire> locataires;
 }

@@ -11,6 +11,7 @@ import bts.sio.azurimmo.model.Locataire;
 import bts.sio.azurimmo.model.dto.LocataireDTO;
 import bts.sio.azurimmo.model.mapper.LocataireMapper;
 import bts.sio.azurimmo.repository.LocataireRepository;
+
 import lombok.Data;
 
 @Data
@@ -31,7 +32,7 @@ public class LocataireService {
 	 }
 	 
 	    
-	 public List<LocataireDTO> getLocationParContrat(long id) {
+	 public List<LocataireDTO> getLocataireParContrat(long id) {
 	        return locataireRepository.findByContrat_Id(id)
 	                                .stream()
 	                                .map(LocataireMapper::toDTO)

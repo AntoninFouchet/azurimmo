@@ -13,4 +13,6 @@ public class ContratDTO {
 	private LocalDate date_fin;
 	private Float montant_brut;
 	private Float montant_charges;
+	
+	
 }

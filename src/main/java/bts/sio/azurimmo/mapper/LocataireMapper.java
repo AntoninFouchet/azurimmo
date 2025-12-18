@@ -1,8 +1,8 @@
-package bts.sio.azurimmo.model.mapper;
+package bts.sio.azurimmo.mapper;
 
 import bts.sio.azurimmo.model.Locataire;
 
-import bts.sio.azurimmo.model.dto.LocataireDTO;
+import bts.sio.azurimmo.dto.LocataireDTO;
 
 
 public class LocataireMapper {

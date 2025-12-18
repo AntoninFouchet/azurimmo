@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import bts.sio.azurimmo.model.Batiment;
-import bts.sio.azurimmo.model.dto.BatimentDTO;
-import bts.sio.azurimmo.model.mapper.BatimentMapper;
+import bts.sio.azurimmo.dto.BatimentDTO;
+import bts.sio.azurimmo.mapper.BatimentMapper;
 import bts.sio.azurimmo.repository.BatimentRepository;
 
 @Service 

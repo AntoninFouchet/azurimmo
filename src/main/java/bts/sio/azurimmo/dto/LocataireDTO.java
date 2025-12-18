@@ -1,4 +1,4 @@
-package bts.sio.azurimmo.model.dto;
+package bts.sio.azurimmo.dto;
 
 import lombok.Getter;
 import lombok.Setter;

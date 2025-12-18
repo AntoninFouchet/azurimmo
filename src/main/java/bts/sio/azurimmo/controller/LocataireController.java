@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import bts.sio.azurimmo.model.Locataire;
-import bts.sio.azurimmo.model.dto.LocataireDTO;
+import bts.sio.azurimmo.dto.LocataireDTO;
 import bts.sio.azurimmo.service.LocataireService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

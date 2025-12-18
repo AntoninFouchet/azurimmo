@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import bts.sio.azurimmo.model.Contrat;
-import bts.sio.azurimmo.model.dto.ContratDTO;
+import bts.sio.azurimmo.dto.ContratDTO;
 import bts.sio.azurimmo.service.ContratService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

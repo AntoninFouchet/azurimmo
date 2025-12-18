@@ -4,7 +4,7 @@ import bts.sio.azurimmo.model.Appartement;
 import bts.sio.azurimmo.service.AppartementService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import bts.sio.azurimmo.model.dto.AppartementDTO;
+import bts.sio.azurimmo.dto.AppartementDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

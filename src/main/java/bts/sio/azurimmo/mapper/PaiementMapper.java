@@ -1,7 +1,7 @@
-package bts.sio.azurimmo.model.mapper;
+package bts.sio.azurimmo.mapper;
 
 import bts.sio.azurimmo.model.Paiement;
-import bts.sio.azurimmo.model.dto.PaiementDTO;
+import bts.sio.azurimmo.dto.PaiementDTO;
 
 public class PaiementMapper {
 

@@ -1,7 +1,7 @@
-package bts.sio.azurimmo.model.mapper;
+package bts.sio.azurimmo.mapper;
 
 import bts.sio.azurimmo.model.Appartement;
-import bts.sio.azurimmo.model.dto.AppartementDTO; // <<< Import du DTO
+import bts.sio.azurimmo.dto.AppartementDTO; // <<< Import du DTO
 
 public class AppartementMapper {
 

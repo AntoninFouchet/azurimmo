@@ -1,9 +1,9 @@
-package bts.sio.azurimmo.model.mapper;
+package bts.sio.azurimmo.mapper;
 
 import java.util.stream.Collectors;
 
 import bts.sio.azurimmo.model.Batiment;
-import bts.sio.azurimmo.model.dto.BatimentDTO; 
+import bts.sio.azurimmo.dto.BatimentDTO;
 
 
 public class BatimentMapper {

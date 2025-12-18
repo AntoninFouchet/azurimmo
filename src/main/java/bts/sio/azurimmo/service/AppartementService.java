@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import bts.sio.azurimmo.model.Appartement;
-import bts.sio.azurimmo.model.dto.AppartementDTO;
-import bts.sio.azurimmo.model.mapper.AppartementMapper;
+import bts.sio.azurimmo.dto.AppartementDTO;
+import bts.sio.azurimmo.mapper.AppartementMapper;
 import bts.sio.azurimmo.repository.AppartementRepository;
 import lombok.Data;
 

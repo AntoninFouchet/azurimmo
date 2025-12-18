@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import bts.sio.azurimmo.model.Locataire;
-import bts.sio.azurimmo.model.dto.LocataireDTO;
-import bts.sio.azurimmo.model.mapper.LocataireMapper;
+import bts.sio.azurimmo.dto.LocataireDTO;
+import bts.sio.azurimmo.mapper.LocataireMapper;
 import bts.sio.azurimmo.repository.LocataireRepository;
 
 import lombok.Data;

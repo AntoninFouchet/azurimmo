@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import bts.sio.azurimmo.model.dto.BatimentDTO;
+import bts.sio.azurimmo.dto.BatimentDTO;
 import bts.sio.azurimmo.service.BatimentService;
 
 import io.swagger.v3.oas.annotations.Operation; // Import Swagger

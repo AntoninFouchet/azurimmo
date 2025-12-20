@@ -37,15 +37,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- DEVTOOLS COMMENTÉ TEMPORAIREMENT : Cause souvent des erreurs "ClassNotFound" au démarrage -->
-		<!--
+
         <dependency>
            <groupId>org.springframework.boot</groupId>
            <artifactId>spring-boot-devtools</artifactId>
            <scope>runtime</scope>
            <optional>true</optional>
         </dependency>
-        -->
+
 
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>

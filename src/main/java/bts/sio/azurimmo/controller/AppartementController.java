@@ -32,7 +32,7 @@ public class AppartementController {
     }
     
     @GetMapping("/batiment/{batimentId}")
-    @Operation(summary = "Consulter un appartement")
+    @Operation(summary = "Lister tous les appartements d'un batiment")
     public List<AppartementDTO> getAppartementsParBatiment(@PathVariable long batimentId) {
             return appartementService.getAppartementsParBatiment(batimentId);
      }
